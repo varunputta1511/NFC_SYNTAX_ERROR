@@ -1,0 +1,240 @@
+@font-face {
+    font-family: my font;
+    src:url(KgRedHands-Agrm.ttf);
+}
+    @font-face {
+        font-family: my font A;
+        src:url(KgRedHandsOutline-q4P0.ttf);
+        
+}
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+html{
+   
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 100%;
+    font-family: my font;
+}
+
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+/*css reset*/
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+#menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+#menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+#home{
+   background-image: url(WhatsApp\ Image\ 2023-09-15\ at\ 18.30.51.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+}
+
+#about{
+    background-image: url(Screenshot\ 2023-09-16\ 071831.png);
+    background-size: cover;
+}
+
+#product{
+     background-color:rgb(46,47,46); 
+}
+
+#pricing{
+     background-color: #765827;
+}
+
+#contact{
+     background-color: #65451F;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#logo
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: my font;
+}
+#menu li a:hover
+{
+ color: black;
+}
+body::-webkit-scrollbar {
+        display: none;
+      }
+
+#element
+{
+    
+    font-size: 100px;
+    color: #a7cdb2;
+    font-family: Homemade;
+}
+#design
+{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    size: 30%;
+}
+.arrow
+{
+    align-items: center;
+    text-align: center;
+    padding-top: 50%;
+}
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+#scholarships
+{
+    background-image: url(WhatsApp\ Image\ 2023-09-16\ at\ 11.18.33.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
